@@ -1,0 +1,89 @@
+/* RuleForm.css */
+
+/* Container styling */
+.container {
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  /* Expression box styling */
+  .mb-3.border.p-3.rounded {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Expression box hover effect */
+  .mb-3.border.p-3.rounded:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Dropdown and input styling */
+  .form-select,
+  .form-control {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+  }
+  
+  /* Button styling */
+  .btn {
+    border-radius: 5px;
+  }
+  
+  /* "Add Expression" button color */
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  /* "Add Expression" button hover effect */
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  /* "Delete" button color */
+  .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+  }
+  
+  /* "Delete" button hover effect */
+  .btn-danger:hover {
+    background-color: #c82333;
+    border-color: #c82333;
+  }
+  
+  /* Submit button styling */
+  .btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+  }
+  
+  /* Submit button hover effect */
+  .btn-success:hover {
+    background-color: #218838;
+    border-color: #218838;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    /* Adjust spacing for small screens */
+    .container {
+      padding: 10px;
+    }
+  
+    /* Make expression boxes stack on top of each other */
+    .mb-3.border.p-3.rounded {
+      margin-bottom: 10px;
+    }
+  
+    /* Adjust button width for small screens */
+    .btn-primary,
+    .btn-danger {
+      width: 100%;
+    }
+  }
+  
