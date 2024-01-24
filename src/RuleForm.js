@@ -9,6 +9,10 @@ const RuleForm = () => {
   ]);
   const [formErrors, setFormErrors] = useState({});
   const [ruleSummary, setRuleSummary] = useState('');
+  const [formData, setFormData] = useState({
+    connectorType: 'and',
+    expressions: [{ ruleType: 'Age', operator: '>=', value: '', score: '' }],
+  });
   const [showClearConfirmation, setShowClearConfirmation] = useState(false);
 
   const ruleTypes = ['Age', 'CreditScore', 'AccountBalance'];
@@ -80,7 +84,7 @@ const RuleForm = () => {
   return (
     <div className="container mt-5">
       <form>
-        <div className="mb-3">
+        <div className="mb-3"> 
           <label htmlFor="connectorType" className="form-label">
             Connector Type:
           </label>
@@ -179,7 +183,7 @@ const RuleForm = () => {
 
         {ruleSummary && (
           <div className="mt-4">
-            <h5>Rule Summary:</h5>
+            <h1>OUTPUT:</h1>
             <pre>{ruleSummary}</pre>
           </div>
         )}
