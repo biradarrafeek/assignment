@@ -9,10 +9,10 @@ const RuleForm = () => {
   ]);
   const [formErrors, setFormErrors] = useState({});
   const [ruleSummary, setRuleSummary] = useState('');
-  const [formData, setFormData] = useState({
-    connectorType: 'and',
-    expressions: [{ ruleType: 'Age', operator: '>=', value: '', score: '' }],
-  });
+  // const [formData, setFormData] = useState({
+  //   connectorType: 'and',
+  //   expressions: [{ ruleType: 'Age', operator: '>=', value: '', score: '' }],
+  // });
   const [showClearConfirmation, setShowClearConfirmation] = useState(false);
 
   const ruleTypes = ['Age', 'CreditScore', 'AccountBalance'];
